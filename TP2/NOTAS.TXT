@@ -1,0 +1,25 @@
+Fopen vs open()
+Fopen->funcao C->biblioteca de c manipulamos um tipo file  open->funcao UNIX->indice portanto manipulação de inteiros é o que é manipulado
+
+1 programas tem 3 descritores sempre abertos :STDIN_FILENO->teclado, STDOUT_FIELNO()->consola/terminal, STDERR_FILENO->consola/terminal
+
+
+o_trunk()->remove o conteudo do ficheiro
+o_append->adiciona ao ficheiro caso já existam lá cenas
+
+EM C: 0100!=100 porque o primeiro é octal e o segundo decimal
+
+
+o tipo mais genérico em c é void*-> daí que a função read use esste tipo.  A FUNCAO READ REQUER NUMERO DE BYTES NAO DE BITS
+
+funcao unlink é fixe para se eu estiver a usar o ficheiro em dois programas, ele espera que todos os programas que usam o ficheiro fechem antes de eliminar o ficheiro
+
+
+inode->apontador para conjunto de dados (pode ser mais complexo mas no básico é isto)
+se referenciar diretamente é um hardlink
+link simbólico é um ficheiro que referencia outro (é um atalho) que diz qual é o nome em lugar do inode
+
+
+fread (size ->tamanho de cada elemento, nmemb->no maximo quantos elementos de size size)
+
+TER CUIDADO NO COMANDO WRITE PARA NÃO TER A FLAG DE EXCLUSIVIDADE LIGADA, SENÃO O FICHEIRO NÃO É CRIADO/RECRIADO
