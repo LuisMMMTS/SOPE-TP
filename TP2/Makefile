@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -Werror -pedantic
+CFLAGS=-Wall -Wextra -Werror -pedantic -Wno-unused-parameter
 TARGETS = $(patsubst %.c,%,$(wildcard *.c))
 
 define make_target
