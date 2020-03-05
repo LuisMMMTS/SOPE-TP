@@ -1,0 +1,57 @@
+ficha 1
+ex1:cultura geral e facilitar certas operações e perceber as secções da man
+execução sequencial &&, ; , ||, pipe etc
+ex2:como usar compilador
+
+ex3:imprimir codigo de exit e ter atenção para nãpo dar echo de echo
+
+ex4 argc argv envp recebemos sempre como texto e depois tem de se fazer conversao
+
+análise de situações de erro principalmente quando o programa continua a executar, sendo que só aprece se for tratado
+
+handlers atexit->são executados quando se retorna e em ordem inversa à invocação original
+
+perceber o impacto em tempo de execução (se quiser posso usar o comando time da shell de linux
+
+ex 9 e 10: apenas se quisermos explorar scripts de shell, não necessário.
+ex10: extra se quisermos fazer um miniprocessador de shell usado C
+
+
+
+ficha 2
+ex1: modo canónico e modo não canónico->se a string é introduzida de uma vez ou caracter a caracter->era só para cultura geral
+
+operações básicas sobre ficheiros
+
+ex4:reforçar a representação sobre forma de texto binário
+
+fazer a experiencia int i=0x00313233->codigo asci \0123
+	se fizer printf("%s\n",(char*)&i)->vai imprimir 321 porque em memoria é guardado ao contrario, e como originalmente o i não era uma string ele depois ao imprimir não sabe que tem de trocar a ordem.->a arquitetura x86 é little endian->os inteiros têm 4 bites são guardados little endian, e depois dependendo do tipo de dados a arquitetura tem de saber como os ler.
+
+
+ex5: operações com o cursor de ficheiros e de escrita de ficheiros que já existem com conteudo, sem conteudo, que não existem
+verificar que às vezes ao escrever por cima, estamos a não apagar todos os dados que já lá estavam e os ficheiros poderão ficar lá com mb inuteis.  ex escrevi 4 bites, dei overwrite aos dois primeiros, o tecerio e o quarto continuam lá, ainda que inúteis.
+
+
+ex6: hardlinks e symboliclinks
+
+hardlinks ligação direta a inodes (representação efetiva do ficheiro)
+symboliclinks, indica apenas o atalho para o caminho, não aponta diretamente para o inode, mas para o caminho que levará ao inode. (os inodes variam de máquina para máquina mesmo que estas tenham caminhos reativos semelhantes
+
+lstat->mostra o caminho referenciado sobre o simboliclink, ou seja sobre o ficheiro final em si e não apenas sobre o atalho.
+
+
+
+
+
+
+ficha 3:
+ex1: criar processo uso da função fork()->retorna 2 valores 0 (recebido pelo filho-só tem 1 pai e consegue facilmente saber o seu proprio pid e o do seu pai) e <pid> (recebido pelo pai-porque o pai pode ter vários filhos e assim fica logo com a identificação de cada um dos filhos)->ou seja a função não retorna 2 valores, retorna 1 valor para o pai e outro para o filho, ou seja um valor que depende do processo a que é retornado
+
+o novo processo é uma cópia e estão no mesmo estado com as mesmas variáveis e tudo igual até o passo de execução
+
+ex4:sincronização básicos
+
+
+
+
