@@ -1,1 +1,13 @@
 não acabei o 2a e 2b 
+no 4 como é que eu sei qual é o tamanho que irei receber no buffer do fgets? meto um máximo arbitrário? 
+    como faço se o máximo real ultrapassar isso?
+no 4 b->gravar uma struct num ficheiro não é converter os dados para string e guardá-los de forma a quando forem lidos de novo sejam outra vez alvo de parsing para repor a struct original??
+não deverá portatno haver problemas com o comando cat para ler o ficheiro
+
+no 5 é possivel utilizar o perror para imprimir erro? como?
+
+no p6a existe alguma razão para que quando uso a pasta enunciados o lstat retorne de inicio -1 e só após isso 0??
+
+ex 6 e  quando apago o temp.txt o hardlink continua a conseguir imprimir. Então o ficheiro na prática continua a existir certo? como é que eu sei que após apagar o hardlink ele não vai continuar a existir só que inacessivel?
+
+no meu pc não há diferenças entre lstat e stat, era suposto notar diferenças no link da pasta tendo em conta que não é um link simbólico?

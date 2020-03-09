@@ -1,1 +1,0 @@
-COPY.o: COPY.c
