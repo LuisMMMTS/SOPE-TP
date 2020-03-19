@@ -1,0 +1,8 @@
+watch --interval 0.1 <comando> 
+watch --interval <intervalo> <comando>
+
+o intervalo pode ser um número decimal
+
+ter apenas atenção que o separador decimal depende da língua que tiverem no vosso PC
+
+a flag que referi e que não consta dos apontamentos sobre a API de Unix é SA_NODEFER
