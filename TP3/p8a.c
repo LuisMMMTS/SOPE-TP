@@ -12,9 +12,9 @@ int main(int argc, char *argv[], char *envp[])
  }
  pid=fork();
  if (pid > 0)
- printf("(My child is going to execute command \"ls -laR %s\" \n)", argv[1]);
+ printf("My child is going to execute command \"ls -laR %s\" \n", argv[1]);
  else if (pid == 0){
- execlp(...);
+ execlp("ls", "ls", "-laR", argv[1], NULL);
  printf("Command not executed !\n");
  exit(1);
  }
