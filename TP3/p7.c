@@ -1,11 +1,14 @@
 // PROGRAMA p7.c
-#include ...
-int main(int argc, char *argv[]) 
-Sistemas Operativos – MIEIC                                                                                                                                              Jorge Silva
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdlib.h>
+int main(int argc, char *argv[])
 {
  char prog[20];
  sprintf(prog,"%s.c",argv[1]);
  execlp("gcc","gcc",prog,"-Wall","-o",argv[1],NULL);
- printf(...);
- exit(...);
+ //printf("im here");  does not print?? because the execution code was changed in previous command
+ printf("successfully compiled %s. New file is %s",argv[1],prog);
+ //exit(...);
 } 
