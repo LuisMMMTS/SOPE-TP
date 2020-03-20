@@ -1,2 +1,3 @@
 P5.c
 Ia começar o ex 6 mas ainda so cpiei o codigo mais nada
+se oregisto STDIN é sempre o mesmo (é iniciado com o sistema operativo) como é que se procede com vários programas que podem estar a subscrevê-lo ao mesmo tempo. eu quando estou a teclar na console não estou no browser por exemplo
