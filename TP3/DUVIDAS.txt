@@ -6,3 +6,7 @@ se oregisto STDIN é sempre o mesmo (é iniciado com o sistema operativo) como �
 no p6c o programa comportou-se da mesma forma das duas vezes
 
 no p7 o valod adequado para printf e exit é só no caso de ocorer erro certo porque senão nem sequer são executados
+
+porque é que o comando execlp e execls precisam que oprimeiro argumento seja ls?
+no p8b o que é que está mal no comando execl?
+no p8c porque é que o array está mal declarado?
