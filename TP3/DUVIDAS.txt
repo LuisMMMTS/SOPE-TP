@@ -10,3 +10,7 @@ no p7 o valod adequado para printf e exit é só no caso de ocorer erro certo po
 porque é que o comando execlp e execls precisam que oprimeiro argumento seja ls?
 no p8b o que é que está mal no comando execl?
 no p8c porque é que o array está mal declarado?
+
+
+p11 linha 21 como seria
+p12 falta confirmar se funciona
