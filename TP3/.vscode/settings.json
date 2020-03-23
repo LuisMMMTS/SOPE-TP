@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "types.h": "c"
+        "types.h": "c",
+        "hash_map": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "unordered_map": "c",
+        "unordered_set": "c",
+        "string_view": "c"
     }
 }
