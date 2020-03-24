@@ -9,7 +9,11 @@ void sigint_handler(int signo)
 }
 int main(void)
 {
-    if ((long)signal(SIGINT, sigint_handler) < 0)
+    struct sigaction sa;
+    struct sigaction backup;
+    sa.sa_handler=sigint_handler;
+
+    if ((long)sigaction(SIGINT, &sa, &backup) < 0)
     {
         fprintf(stderr, "Unable to install SIGINT handler\n");
         exit(1);
