@@ -1,1 +1,5 @@
 p3 nao acabei esta com problemas
+
+
+5a->por omissao o sigchld é ignorado certo? não se tem que fazer nenhuma indicação para o kernel saber que o sigchld é ignorado pelo programa certo?
+5b desde o inicio do programa que entra no handler de sigchld nem sequeer imprime as outras coisas pk?
