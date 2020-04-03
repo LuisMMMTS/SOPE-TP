@@ -13,7 +13,7 @@ void sigint_handler(int signo)
 
 int main(int argc, char *argv[])
 {
-    if (argc<2){
+    /*if (argc<2){
         printf("Usage: limit t prog prog_arg1 prog_arg2...\n");
     }
 
@@ -27,10 +27,12 @@ int main(int argc, char *argv[])
     {
         fprintf(stderr, "Unable to install SIGINT handler\n");
         exit(1);
-    }
+    }*/
 
-    int t=atoi (argv[1]);
-    pid_t pid=fork();
+    pid_t pids[argc];
+    for (int i=1;i<argc;i++){
+        pids[i]=fork()
+    }
 
     if (pid==0){
         execvp(argv[2], &argv[2]);
