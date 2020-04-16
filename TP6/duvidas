@@ -1,3 +1,6 @@
+a unica diferença então das recurring functions e não recurring (ctime/ctime_r) é só que uma delas especifica qual é a variável que usamos como buffer de saída? é esse o significado de ser recurring?
+
+
 não fiz o p1b porque n achei necessario
 p2 como devolver à thread principal o nr caracteres devolvidos->in the exit status??
 
