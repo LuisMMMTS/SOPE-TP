@@ -23,5 +23,6 @@ int main()
  pthread_create(&threads[t], NULL, PrintHello, (void *)&thread_number[t]);
  }
  pthread_exit(0);
- //exit(0);n imprime nada provavelmente porque afunc n dá flush antes de eliminar o processo, já que não está ativado o join para esperar que as threads acabem
+ //return 0;//n imprime nada provavelmente porque afunc n dá flush antes de eliminar o processo, já que não está ativado o join para esperar que as threads acabem
+ //exit(0);//n imprime nada provavelmente porque afunc n dá flush antes de eliminar o processo, já que não está ativado o join para esperar que as threads acabem
 }
