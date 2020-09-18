@@ -1,2 +1,3 @@
 passa-se qualquer erro estupido com o p1
 p1b porque struct não é reconhecida?
+é possivel usar o fprintf como foi usado no p2?
